@@ -3,57 +3,27 @@
 using namespace std;
 
 struct Node{
-    int data;
+    int64_t value;
     Node* next;
 };
 
-struct List{
-    Node* root = NULL;
-};
-
-void PushBack(List* l, int val){
-    Node* i = l->root;
-    if(i == NULL){
-        Node* a = new Node;
-        a->data = val;
-        a->next = NULL;
-        l->root = a;
-    }else{
-        while(i->next != NULL){
+void PushBack(Node* current_node, int64_t value){
+    Node* i = current_node;
+    while(i->next != NULL){
             i = i->next;
-        }
-        Node* a = new Node;
-        a->data = val;
-        a->next = NULL;
-        i->next = a;
     }
+    Node* a = new Node;
+    a->value = value;
+    a->next = NULL;
+    i->next = a;
 }
 
-int PopFirst(List* l){
-    int ret = l->root->data;
-    l->root = l->root->next;
-    return ret;
-}
-
-void PrintAll(List* l){
-    for(Node* i=l->root; i!= NULL; i = i->next){
-        cout<<i->data<<' ';
-    }
-}
-
-void Clear(List* l){
-    for(Node* i=l->root; i!= NULL; i = i->next){
-        delete i;
-    }
-    delete l;
-}
-
-Node* mergeLists(){
+Node* mergeLists(Node* first_node, Node* second_node){
 
 }
 
 int main()
 {
-    List* a = new List;
+
     return 0;
 }

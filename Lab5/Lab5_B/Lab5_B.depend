@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1614586952 source:c:\users\Фадей\documents\github\cpp_labs\lab5\lab5_b\main.cpp
+1614592338 source:c:\users\Фадей\documents\github\cpp_labs\lab5\lab5_b\main.cpp
 	<iostream>
 	<stack>
+	<sstream>
+	<string>
 

@@ -1,62 +1,85 @@
 #include <iostream>
 #include <stack>
+#include <sstream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
     stack <int> a;
+    string line;
+    getline(cin, line);
+    stringstream str(line);
     int b, c;
-    char d;
-    cin>>b>>c;
+    str>>b>>c;
     a.push(b);
     a.push(c);
-    cin>>d;
-    while(a.size()>0){
-        //if(d==' ') cin>>d;
-        switch (d){
-        case '+':
+    str>>line;
+    while(!str.eof()){
+        if(line=="+"){
             b=a.top();
             a.pop();
             c=a.top();
             a.pop();
             a.push(b+c);
-            cout<<"+ ";
-            break;
-        case '-':
-            b=a.top();
-            a.pop();
+
+        }else if(line=="-"){
             c=a.top();
+            a.pop();
+            b=a.top();
             a.pop();
             a.push(b-c);
-            cout<<"- ";
-            break;
-        case '/':
-            b=a.top();
-            a.pop();
-            c=a.top();
-            a.pop();
-            a.push(b/c);
-            cout<<"/ ";
-            break;
 
-        case '*':
+        }else if(line=="*"){
             b=a.top();
             a.pop();
             c=a.top();
             a.pop();
             a.push(b*c);
-            cout<<"* ";
-            break;
-        default:
-            a.push(d - '0');
-            cout<<"def "<<d - '0'<<endl;
-        }
-        //cout<<b<<" "<<c<<" ";
 
-        cout<<a.top()<<" "<<endl;
-        cin>>d;
+        }else if(line=="/"){
+
+            c=a.top();
+            a.pop();
+            b=a.top();
+            a.pop();
+            a.push(b/c);
+        }else{
+            a.push(stoi(line));
+        }
+        str>>line;
     }
-    cout <<a.top()<<"  "<< a.size() << endl;
+    if(line=="+"){
+            b=a.top();
+            a.pop();
+            c=a.top();
+            a.pop();
+            a.push(b+c);
+        }else if(line=="-"){
+            c=a.top();
+            a.pop();
+            b=a.top();
+            a.pop();
+            a.push(b-c);
+
+        }else if(line=="*"){
+            b=a.top();
+            a.pop();
+            c=a.top();
+            a.pop();
+            a.push(b*c);
+
+        }else if(line=="/"){
+            c=a.top();
+            a.pop();
+            b=a.top();
+            a.pop();
+            a.push(b/c);
+        }else{
+            a.push(stoi(line));
+        }
+        str>>line;
+    cout <<a.top();
     return 0;
 }

@@ -21,7 +21,7 @@ int rand_uns(int min, int max)
 
 int main()
 {
-    unsigned int n = 1000;
+    unsigned int n = 10000;
     int *test_sequence = new int[n], sum_for_O3 = 0, test_sequence_sum = 0, ongoing_sum = 0,
             *push_sequence = new int[n],
             *pop_sequence = new int[n],

@@ -1,13 +1,11 @@
 #include "subforwardlist.h"
-
 bool init(subforwardlist **sfl) {
     *sfl = nullptr;
-    //clear(sfl);
     return true;
 } //инициализация пустого недосписка
 bool push_back(subforwardlist **sfl, int d) {
     subforwardlist *a = *sfl;
-    subforwardlist *b = new subforwardlist;
+    subforwardlist b = new subforwardlist;
     b->data = d;
     if (*sfl == nullptr) {
         *sfl = b;
@@ -25,14 +23,16 @@ int pop_back(subforwardlist **sfl) {
     if (a == nullptr)return 0;
     if (a->next == nullptr) {
         *sfl = nullptr;
-        return a->data;
+        int ret = a->data;
+        delete a;
+        return ret;
     }
     while (a->next != nullptr) {
         b = a;
         a = a->next;
     }
     int ret = a->data;
-    //delete a;
+    delete a;
     b->next = nullptr;
     return ret;
 } //удаление элемента с конца недосписка
@@ -52,8 +52,7 @@ int pop_forward(subforwardlist **sfl) {
     int ret = (*sfl)->data;
     subforwardlist *del = *sfl;
     *sfl = (*sfl)->next;
-    //delete del;
-    //del= nullptr;
+    delete del;
     return ret;
 } //удаление элемента из начала недосписка
 bool push_where(subforwardlist **sfl, unsigned int where, int d) {
@@ -76,8 +75,8 @@ bool erase_where(subforwardlist **sfl, unsigned int where) {
     if (where == 0) {
         subforwardlist *del = *sfl;
         *sfl = (*sfl)->next;
-        //delete del;
-        //del = nullptr;
+        delete del;
+        return true;
     }
     subforwardlist *pre, *cur, *nex;
     cur = *sfl;
@@ -88,7 +87,7 @@ bool erase_where(subforwardlist **sfl, unsigned int where) {
     }
     pre->next = nex;
     //cur->next = nullptr;
-    //delete cur;
+    delete cur;
     //cur->next = nullptr;
     //cur = nullptr;
     return true;
@@ -105,6 +104,7 @@ unsigned int size(subforwardlist **sfl) {
 void clear(subforwardlist **sfl) {
     subforwardlist *a = *sfl;
     subforwardlist *b;
+    if(a == nullptr) return;
     while (a->next != nullptr) {
         b = a;
         a = a->next;

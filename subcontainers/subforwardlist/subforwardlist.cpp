@@ -5,7 +5,7 @@ bool init(subforwardlist **sfl) {
 } //инициализация пустого недосписка
 bool push_back(subforwardlist **sfl, int d) {
     subforwardlist *a = *sfl;
-    subforwardlist b = new subforwardlist;
+    subforwardlist *b = new subforwardlist;
     b->data = d;
     if (*sfl == nullptr) {
         *sfl = b;

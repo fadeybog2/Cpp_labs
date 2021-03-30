@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Fadey/Documents/GitHub/Cpp_labs/Podgotovka_k_KR/03_masseffect/main.cpp
+iostream
+-
+vector
+-
+

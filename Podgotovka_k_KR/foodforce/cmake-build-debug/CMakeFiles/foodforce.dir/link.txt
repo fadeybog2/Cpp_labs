@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/foodforce.dir/main.cpp.o  -o foodforce 

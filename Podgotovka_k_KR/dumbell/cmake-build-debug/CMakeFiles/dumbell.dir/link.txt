@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/dumbell.dir/main.cpp.o  -o dumbell 

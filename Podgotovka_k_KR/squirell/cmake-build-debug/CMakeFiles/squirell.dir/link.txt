@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/squirell.dir/main.cpp.o  -o squirell 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/tetrahedron.dir/main.cpp.o  -o tetrahedron 

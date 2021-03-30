@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/goblins.dir/main.cpp.o  -o goblins 

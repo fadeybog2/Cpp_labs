@@ -19,24 +19,18 @@ int main()
         Node* nextnode = new Node;
         nextnode->data = i;
         curnode->next = nextnode;
-        //prevnode = curnode;
         curnode = nextnode;
     }
     curnode->next = fnode;
     prevnode = curnode;
     curnode = fnode;
 
-    //cout<<"Created!"<<endl;
     while(n>1){
-        //cout<<"n = "<<n<<endl;
         for(int i = 1; i < k; i++){
-            //cout<<"current "<<curnode->data<<endl;
             prevnode = curnode;
             curnode = curnode->next;
         }
-        //cout<<n;
         nextnode = curnode->next;
-        //cout<<"delete "<<curnode->data<<endl;
         delete curnode;
         curnode = nextnode;
         prevnode->next = curnode;

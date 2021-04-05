@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Skobki.dir/main.cpp.o  -o Skobki 

@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /mnt/c/Users/Fadey/Downloads/cmake-3.17.5-Linux-x86_64/bin/cmake
+CMAKE_COMMAND = /home/fadey/cmake-3.17.4-Linux-x86_64/bin/cmake
 
 # The command to remove a file.
-RM = /mnt/c/Users/Fadey/Downloads/cmake-3.17.5-Linux-x86_64/bin/cmake -E rm -f
+RM = /home/fadey/cmake-3.17.4-Linux-x86_64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =

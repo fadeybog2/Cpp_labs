@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Fadey/Documents/GitHub/Cpp_labs/sort/sort_benchmark/main.cpp
+vector
+-
+chrono
+-
+random
+-
+iostream
+-
+algorithm
+-
+cassert
+-
+fstream
+-
+string
+-
+

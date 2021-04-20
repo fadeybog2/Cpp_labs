@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/merge_sort.dir/main.cpp.o"
-  "merge_sort"
+  "CMakeFiles/merge_sort.dir/main.cpp.obj"
+  "libmerge_sort.dll.a"
+  "merge_sort.exe"
+  "merge_sort.exe.manifest"
   "merge_sort.pdb"
 )
 

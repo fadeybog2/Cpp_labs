@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sort_benchmark.dir/main.cpp.obj"
-  "libsort_benchmark.dll.a"
-  "sort_benchmark.exe"
-  "sort_benchmark.exe.manifest"
+  "CMakeFiles/sort_benchmark.dir/main.cpp.o"
+  "sort_benchmark"
   "sort_benchmark.pdb"
 )
 

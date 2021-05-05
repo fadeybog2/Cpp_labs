@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Fadey/Documents/GitHub/Cpp_labs/sort/sort_benchmark/main.cpp
+/mnt/c/Users/Fadey/Documents/GitHub/Cpp_labs/sort/sort_benchmark/main.cpp
 vector
 -
 chrono

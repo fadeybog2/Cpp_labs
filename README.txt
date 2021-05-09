@@ -8,5 +8,6 @@ sort: https://t.me/c/1340003114/337, https://t.me/c/1340003114/363
 KR: http://judge2.vdi.mipt.ru/cgi-bin/new-client?contest_id=20206
 Merge Lists: lab4/1			
 Задача Иосифа Флавия: Lab4/3
+subcontainers: https://t.me/c/1340003114/322
 Dynamic: https://t.me/c/1340003114/375
 Dynamic2: http://judge2.vdi.mipt.ru/cgi-bin/new-client?contest_id=20207
